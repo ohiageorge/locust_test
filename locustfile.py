@@ -107,11 +107,11 @@ class BackendUserTasks(TaskSet):
 
 
 class AdminOdooUser(OdooLocustUser):
-    host = "localhost"
-    database = "etdp_live2"
-    login = "admin"
-    password = "admin"
-    port = 8016
+    host = "www.aims-online.co.za"
+    database = "live"
+    login = "ohiageorge"
+    password = "ohiageorge#001"
+    # port = 8016
     wait_time = between(0.1, 10)  # Simulates waiting time between tasks
     
     
@@ -212,11 +212,11 @@ class AdminOdooUser(OdooLocustUser):
     
     
 class AdminOdooUserGeneric(OdooLocustUser):
-    host = "localhost"
-    database = "etdp_live2"
-    login = "admin"
-    password = "admin"
-    port = 8016
+    host = "www.aims-online.co.za"
+    database = "live"
+    login = "ohiageorge"
+    password = "ohiageorge#001"
+    # port = 8016
     wait_time = between(0.1, 10)  # Simulates waiting time between tasks
     
     @task(10)
