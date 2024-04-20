@@ -109,8 +109,8 @@ class BackendUserTasks(TaskSet):
 class AdminOdooUser(OdooLocustUser):
     host = "www.aims-online.co.za"
     database = "live"
-    login = "ohiageorge"
-    password = "ohiageorge#001"
+    login = "ohiageorge@gmail.com"
+    password = "@UrK5sSXU@3Tup"
     port = 443
     wait_time = between(0.1, 10)  # Simulates waiting time between tasks
     
@@ -214,9 +214,9 @@ class AdminOdooUser(OdooLocustUser):
 class AdminOdooUserGeneric(OdooLocustUser):
     host = "www.aims-online.co.za"
     database = "live"
-    login = "ohiageorge"
-    password = "ohiageorge#001"
-    # port = 8016
+    login = "ohiageorge@gmail.com"
+    password = "@UrK5sSXU@3Tup"
+    port = 443
     wait_time = between(0.1, 10)  # Simulates waiting time between tasks
     
     @task(10)
