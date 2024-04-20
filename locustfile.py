@@ -122,16 +122,10 @@ class BackendUser(HttpUser):
 
 
 # class AdminOdooUser(OdooLocustUser):
-#     # host = "www.aims-online.co.za"
-#     # database = "live"
-#     # login = "ohiageorge@gmail.com"
-#     # password = "@UrK5sSXU@3Tup"
-#     # port = 443
-#     # wait_time = between(0.1, 10)  # Simulates waiting time between tasks
 #     host = "localhost"
 #     database = "etdp_live2"
 #     login = "admin"
-#     password = "@UrK5sSXU@3Tup"
+#     password = "ad§min"
 #     port = 8016
 #     wait_time = between(0.1, 10)  # Simulates waiting time between tasks
     
@@ -236,7 +230,7 @@ class BackendUser(HttpUser):
 #     host = "www.aims-online.co.za"
 #     database = "live"
 #     login = "ohiageorge@gmail.com"
-#     password = "@UrK5sSXU@3Tup"
+#     password = "rrrr"
 #     port = 443
 #     wait_time = between(0.1, 10)  # Simulates waiting time between tasks
     
