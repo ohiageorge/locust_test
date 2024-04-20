@@ -89,10 +89,25 @@ def read_user(l):
 def view_sdfs(l):
     l.client.get(
         "/web#action=266&model=inseta.sdf&view_type=list&cids=&menu_id=179", name="/sdfs")
+    
+    
+def view_providers(l):
+    l.client.get(
+        "/web#model=inseta.provider&view_type=list&cids=&menu_id=257", name="/providers")
 
+
+def view_learners(l):
+    l.client.get(
+        "/web#model=inseta.learner&view_type=list&cids=&menu_id=257", name="/learners")
+    
+def view_assess_alloc(l):
+    l.client.get(
+        "/web#model=allocate.assessment&view_type=list&cids=&menu_id=257", name="/assessment_alloc")
     
 class BackendUserTasks(TaskSet):
-    tasks = [login, view_contacts, view_settings, view_users, read_user, view_sdfs]
+    tasks = [login, view_contacts, view_settings, view_users, 
+            read_user, view_sdfs, view_providers, view_learners, view_assess_alloc 
+        ]
 
 
 class BackendUser(HttpUser):
