@@ -226,22 +226,22 @@ class BackendUser(HttpUser):
         # rec.write({'learner_total_count': original_learner_count})
     
     
-# class AdminOdooUserGeneric(OdooLocustUser):
-#     host = "www.aims-online.co.za"
-#     database = "live"
-#     login = "ohiageorge@gmail.com"
-#     password = "rrrr"
-#     port = 443
-#     wait_time = between(0.1, 10)  # Simulates waiting time between tasks
+class AdminOdooUserGeneric(OdooLocustUser):
+    host = "www.aims-online.co.za"
+    database = "live"
+    login = "ohiageorge@gmail.com"
+    password = "ohiageorge#001"
+    port = 443
+    wait_time = between(0.1, 10)  # Simulates waiting time between tasks
     
-#     @task(10)
-#     def fetch_odoo_partners(self):
-#         cust_model = self.client.get_model('res.partner')
-#         cust_ids = cust_model.search([], limit=80)
-#         prtns = cust_model.read(cust_ids, ['name'])
+    @task(10)
+    def fetch_odoo_partners(self):
+        cust_model = self.client.get_model('res.partner')
+        cust_ids = cust_model.search([], limit=80)
+        prtns = cust_model.read(cust_ids, ['name'])
 
         
-#     tasks = [OdooTaskSet.OdooGenericTaskSet]
+    tasks = [OdooTaskSet.OdooGenericTaskSet]
 
         
 # class BackendTest(HttpUser):
